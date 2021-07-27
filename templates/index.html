@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<h1>Breast Cancer Detection</h1>
+
+<body style="background-color:#1c87c9;">
+
+<form action="/predict" method=["GET","POST"]>
+  <legend> Breast Cancer Detection:: </legend>
+   <label for="Age">Age:</label><br>
+   <input type="number" id="Age" name="Age"><br>
+   <label for="BMI">BMI:</label><br>
+   <input type="number" id="BMI" name="BMI"><br>
+   <label for="Adiponectin">Adiponectin:</label><br>
+   <input type="number" id="Adiponectin" name="Adiponectin"><br>
+   <label for="Glucose">Glucose:</label><br>
+   <input type="number" id="Glucose" name="Glucose"><br>
+   <label for="Insulin">Insulin:</label><br>
+   <input type="number" id="Insulin" name="Insulin"><br>
+   <label for="Resistin">Resistin:</label><br>
+   <input type="number" id="Resistin" name="Resistin"><br>
+   <input type="submit" value="predict"><br><br>
+
+ <h2> {{prediction_text}}</h2>
+
+</form>
+</body>
+</html>
